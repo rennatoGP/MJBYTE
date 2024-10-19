@@ -55,7 +55,9 @@
 .footer-section ul li a:hover {
     color: #3dfda0;
 }
-
+.company-info p{
+    text-align: left;
+}
 .footer-section .social-links ul {
     display: flex;
     justify-content: center;
