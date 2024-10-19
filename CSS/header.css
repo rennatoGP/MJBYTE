@@ -9,7 +9,7 @@ body,
 html {
     /* font-family: 'Arial', sans-serif; */
     font-family: "Quicksand", sans-serif;
-
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
     background-color: whitesmoke;
@@ -62,8 +62,9 @@ html {
 
 /* nome emprea */
 .nome_empresa {
-    font-size: 3rem;
-    color: var(--cor4);
+    width: 50%;
+    /* font-size: 3rem;
+    color: var(--cor4); */
 }
 
 /* Título */
@@ -114,7 +115,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
    
 
 }
@@ -130,7 +131,11 @@ html {
         height: auto;
         padding: 10px;
     }
-
+    .nome_empresa{
+        width: 100%;
+        margin-top: 30px;
+        /* background-color: #222; */
+    }
     .titulo{
         background-color: var(--cor4);
         border-radius: 5px;

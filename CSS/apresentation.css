@@ -114,17 +114,17 @@
 
 .top h1 {
     transform: rotate(90deg);
-    top: -180px;
+    top: -130px;
 }
 
 .item1 h1 {
-    left: -40px;
+    left: -0px;
 }
 
 
 .item2 h1 {
     transform: rotate(180deg);
-    right: -40px;
+    /* right: -0px; */
 }
 
 .fundo h1 {

@@ -1,12 +1,12 @@
-:root{
-    --cor1:#0099ff;
-    --cor2:#333333;
-    --cor3:#f3f4f5;
-    --cor4:#ffff;
-    --cor5:#a4c8ec;
-    --cor6:#59C3F7;
-    --cor7:#DFF3FC;
-    --cor8:#66B9B9;
-    --cor9:#B97466;
-    --cor10:#394551;
+:root {
+    --cor1: #0099ff;
+    --cor2: #333333;
+    --cor3: #f3f4f5;
+    --cor4: #ffff;
+    --cor5: #a4c8ec;
+    --cor6: #59C3F7;
+    --cor7: #DFF3FC;
+    --cor8:rgba(0, 153, 255, 0.9);
+    --cor9: rgba(164, 200, 236, 0.9);
+    --cor10: #394551;
 }

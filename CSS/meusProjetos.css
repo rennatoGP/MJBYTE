@@ -26,7 +26,9 @@
     background-color: rgba(0, 0, 0, .5);
 
 }
-
+.abri_Pagina:nth-child(2){
+    display: none;
+}
 .abri_Pagina,
 .abri_github {
     width: 100%;
@@ -48,7 +50,26 @@
     background-color: var(--cor8);
 }
 
-.abri_Pagina span,
+.abri_Pagina span{
+    /* width: 50%; */
+    padding: 0 20px;
+    text-align: center;
+    background-color: none;
+}
+.abri_Pagina span h1 {
+    color: var(--cor4);
+}
+
+.abri_Pagina span p b{
+    margin: 0 10px;
+    color: var(--cor2);
+}
+.abri_Pagina span p {
+    width: 50%;
+    margin-top: 10px;
+    color: var(--cor4);
+}
+
 .abri_github span {
     padding: 10px 20px;
     background: var(--cor4);
@@ -61,6 +82,11 @@
 [class^="projeto-"]{
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
 }
+
+[class^="projeto-"]:nth-of-type(n+2) .abri_Pagina span p {
+    width: 100%;
+}
+
 
 [class^="projeto-"]:hover .abri_Pagina {
     height: 50%;
@@ -140,11 +166,20 @@
     [class^="projeto-"] {
         height: 300px;
     }
+    .abri_Pagina span p {
+        width: 100%;
+       
+    }
 
 }
 
 @media (max-width: 800px) {
-   
+    .abri_Pagina:nth-child(1){
+        display: none;
+    }
+    .abri_Pagina:nth-child(2){
+        display: flex;
+    }
     .Project {
         display: flex;
         flex-wrap: wrap;
