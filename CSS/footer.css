@@ -1,0 +1,99 @@
+.footer {
+    background-color: var(--cor1);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border-top: 2px solid var(--cor2); Adiciona uma linha superior decorativa */
+}
+
+.footer-section {
+    /* flex: 1 1 250px; */
+    width: 100%;
+    margin: 20px;
+}
+
+.footer-section h2 {
+    color: var(--cor4);
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+    font-size: 14px;
+    color: var(--cor2);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: var(--cor2);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #3dfda0;
+}
+
+.footer-section .social-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section .social-links ul li {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section .social-links ul li:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+}
+
+.footer-bottom {
+    background-color: var(--cor2);
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom i {
+    color: #e74c3c; /* Coração em vermelho */
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

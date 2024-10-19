@@ -1,0 +1,203 @@
+/*=============== Person Presentation ============*/
+
+.Content_Presention {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contet_description {
+    width: 100%;
+    padding:0  20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+}
+
+.contet_description h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.contet_description h1 span {
+    background: var(--cor1);
+    background-clip: text;
+    color: transparent;
+}
+
+.description h3 {
+    font-size: 22px;
+    margin-top: .5rem;
+    font-weight: 600;
+
+}
+
+.description p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: justify;
+    
+}
+
+
+/* ========================= formatação circle================= */
+.content_animet_Presention {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    overflow: hidden;
+    background: var(--cor7);
+}
+
+
+.borda_cicle {
+    width: 330px;
+    height: 330px;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: -200px;
+    border: 10px solid var(--cor4);
+    animation: girarInfinito 8s ease-out infinite; 
+}
+
+@keyframes girarInfinito {
+
+    0%,
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25%,
+    45% {
+        transform: rotate(-90deg);
+    }
+
+    50%,
+    70% {
+        transform: rotate(-180deg);
+    }
+
+    75%,
+    95% {
+        transform: rotate(-270deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.borda_cicle h1 {
+    padding: 0 20px;
+    font-size: 40px;
+    position: relative;
+    color: var(--cor6);
+    font-weight: bolder;
+    background-color: var(--cor4);
+}
+
+.center {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top h1 {
+    transform: rotate(90deg);
+    top: -180px;
+}
+
+.item1 h1 {
+    left: -40px;
+}
+
+
+.item2 h1 {
+    transform: rotate(180deg);
+    right: -40px;
+}
+
+.fundo h1 {
+    transform: rotate(-90deg);
+    bottom: -140px;
+
+}
+
+
+
+/* ============ formatação do button ============= */
+.btn_information {
+    width: 100%;
+    padding: 15px 5px;
+    background-color: var(--cor1);
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background:var(--cor1);
+    transition: .6s;
+}
+
+.btn_information a {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: var(--cor4);
+
+}
+
+/* ============== responsivo Person Presentation =============== */
+
+@media (max-width: 1030px) {
+    .Content_Presention {
+        display: block;
+        padding: 15px;
+    }
+
+    .contet_description {
+        padding: 5px;
+        margin-top: 20px;
+
+    }
+
+    .contet_description h1 {
+        font-size: 40px;
+        padding: 0;
+    }
+       
+}
+
+@media (max-width: 500px) {
+   
+    .borda_cicle h1{
+        font-size: 30px;
+    }
+    .top h1{
+        top: -130px;
+    }
+    .item1 h1 {
+        left: 20px;
+    }
+    
+    
+    .item2 h1 {
+        right: 20px;
+    }
+    
+    .fundo h1 {
+        bottom: -130px;
+    
+    }
+}

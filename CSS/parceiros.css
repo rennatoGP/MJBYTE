@@ -1,0 +1,54 @@
+.partners {
+    padding: 40px 20px;
+    /* background-color: var(--cor7); */
+    text-align: center;
+    margin: 60px;
+}
+
+.partners h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.partner-logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Espaçamento entre os logos */
+}
+
+.partner-logo {
+    flex: 1 1 150px; /* Flexível, ocupa um mínimo de 150px */
+    max-width: 200px; /* Largura máxima para cada logo */
+}
+
+.partner-logo img {
+    max-width: 100%; /* Imagem se ajusta ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+}
+/* Responsividade */
+@media (max-width: 800px) {
+   .partners{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top:20px ;
+    background-color: transparent;
+   }
+   .partners h1{
+    font-size: 1.5rem;
+   }
+   .partner-logos{
+    flex-direction: column;
+    
+   }
+   .partner-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+    
+}

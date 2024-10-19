@@ -1,0 +1,164 @@
+/* Reseta margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    /* font-family: 'Arial', sans-serif; */
+    font-family: "Quicksand", sans-serif;
+
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+/* Estilos principais para o header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    height: 80vh;
+    background-color: var(--cor1);
+    /* background-color: #218bf6; */
+    padding: 0 20px;
+    overflow: hidden;
+    /* flex-wrap: wrap; Para garantir que os itens se ajustem em telas menores */
+}
+
+/* Estilos para o conteúdo textual */
+.conteudo {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+  
+}
+
+.navbar ul {
+    /* background-color: var(--cor1); */
+    display: flex;
+    padding: 10px 20px;
+    justify-content: left;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--cor4);
+    font-size: 1.1rem;
+}
+
+/* nome emprea */
+.nome_empresa {
+    font-size: 3rem;
+    color: var(--cor4);
+}
+
+/* Título */
+.titulo {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Descrição */
+.descricao {
+    font-size: 1.2rem;
+    color: var(--cor4);
+    margin-bottom: 20px;
+}
+
+/* Estilos para os botões de contato */
+.botoes-contato {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-contato {
+    text-decoration: none;
+    background-color: var(--cor4);
+    color: var(--cor2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: lighter;
+    transition: background-color 0.3s;
+}
+.btn-contato:nth-child(2){
+    color: white;
+}
+    
+
+.btn-servicos {
+    background-color: #222;
+}
+
+/* Estilos para a área de imagem */
+.content_img {
+    /* margin-top: 70px; */
+    /* background-color: #952323; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   
+
+}
+
+.image-over-circles {
+    width: 70%; 
+}
+
+@media (max-width: 800px) {
+   
+    .header{
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .titulo{
+        background-color: var(--cor4);
+        border-radius: 5px;
+        padding: 20px 5px;
+        margin: 15px 0;
+        font-size: 2rem;
+        text-align: left;
+        
+    }
+    .conteudo{
+        width: 100%;
+        padding: 0;
+    }
+    .content_img{
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar ul li a {
+        color: var(--cor4);
+    }
+
+    .navbar ul {
+        padding: 0;
+        background-color: transparent;
+        /* justify-content: center; */
+    }
+
+    .descricao {
+        font-size: 1rem;
+    }
+
+}
