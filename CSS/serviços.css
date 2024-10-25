@@ -16,9 +16,7 @@
       
   }
   .content_title h1 span{
-      background: var(--cor1);
-      background-clip: text;
-      color: transparent;
+      color: var(--cor11);
   }
   /*================= card_item ========= */
   

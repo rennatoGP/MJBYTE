@@ -23,9 +23,7 @@
 }
 
 .contet_description h1 span {
-    background: var(--cor1);
-    background-clip: text;
-    color: transparent;
+    color: var(--cor11);
 }
 
 .description h3 {
@@ -52,7 +50,8 @@
     justify-content: right;
     position: relative;
     overflow: hidden;
-    background: var(--cor7);
+    /* background: var(--cor7); */
+    background-color:var(--cor11);
 }
 
 
@@ -101,7 +100,7 @@
     padding: 0 20px;
     font-size: 40px;
     position: relative;
-    color: var(--cor6);
+    color: var(--cor11);
     font-weight: bolder;
     background-color: var(--cor4);
 }
@@ -140,14 +139,13 @@
 .btn_information {
     width: 100%;
     padding: 15px 5px;
-    background-color: var(--cor1);
     border-radius: 12px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     border: none;
     outline: none;
-    background:var(--cor1);
+    background:var(--cor11);
     transition: .6s;
 }
 
@@ -181,7 +179,11 @@
 }
 
 @media (max-width: 500px) {
-   
+    .Content_Presention{
+        margin: 30px;
+        padding: 0;
+    }
+    
     .borda_cicle h1{
         font-size: 30px;
     }

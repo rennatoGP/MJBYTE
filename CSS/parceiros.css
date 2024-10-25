@@ -9,6 +9,10 @@
     margin-bottom: 30px;
     font-size: 2rem;
     color: #333;
+
+    span{
+        color: var(--cor11);
+    }
 }
 
 .partner-logos {

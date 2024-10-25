@@ -53,9 +53,7 @@
     transition: background-color 0.3s;
 }
 
-.scroll-button:hover {
-    background-color: var(--cor1); /* Cor ao passar o mouse */
-}
+
 /* Responsividade */
 @media (max-width: 800px) {
     .comments{

@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="./CSS/comentarios.css">
     <link rel="stylesheet" href="./CSS/map.css">
     <link rel="stylesheet" href="./CSS/footer.css">
-    <script src="SCRIPTS/scripts.mjs"></script>
+    <script src="SCRIPTS/scripts.mjs" defer></script>
+    <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.34/build/spline-viewer.js"></script> -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.32/build/spline-viewer.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" <link
@@ -30,9 +31,11 @@
             <h1 class="titulo">Inovação e Tecnologia para o Futuro</h1>
             <!-- Breve descrição da empresa -->
             <p class="descricao">
-                Transformamos ideias em soluções tecnológicas inovadoras, desenvolvendo ferramentas personalizadas que aceleram o crescimento do seu negócio. Nossa equipe colabora estreitamente com você para criar estratégias eficazes que otimizam processos e maximizam resultados.
+                Transformamos ideias em soluções tecnológicas inovadoras, desenvolvendo ferramentas personalizadas que
+                aceleram o crescimento do seu negócio. Nossa equipe colabora estreitamente com você para criar
+                estratégias eficazes que otimizam processos e maximizam resultados.
             </p>
-            
+
             <!-- Botões de contato -->
             <div class="botoes-contato">
                 <a href="https://wa.me/86999934496?text=Olá,%20gostaria%20de%20mais%20informações!"
@@ -50,10 +53,11 @@
                 </ul>
             </nav>
         </div>
-        <spline-viewer url="https://prod.spline.design/OcZm5xEFXQIhE4yG/scene.splinecode"></spline-viewer>   
-        <div class="gradiente_radial"></div>            
+
+        <spline-viewer id="spline" url="https://prod.spline.design/OcZm5xEFXQIhE4yG/scene.splinecode"></spline-viewer>   
+        <div class="gradiente_radial"></div>
     </header>
-        
+
     <sectipon class="Content_Presention" id="sobre">
         <div class="content_animet_Presention">
             <div class="borda_cicle">
@@ -101,7 +105,7 @@
                     <div class="card_description">
                         <h3>Soluções Digitais</h3>
                         <p>Soluções digitais personalizadas para atender a todas as necessidades do seu negócio ou de
-                      setores específicos.</p>
+                            setores específicos.</p>
                     </div>
                 </div>
                 <!-- ============================================= -->
@@ -381,7 +385,7 @@
 
     <!-- empresa parceiras ou cliente -->
     <section class="partners" id="parceiros">
-        <h1>Empresas Parceiras</h1>
+        <h1>Empresas <span>Parceiras</span></h1>
         <div class="partner-logos">
             <div class="partner-logo">
                 <img src="IMG/logo-ligth.png" alt="Logo da Empresa 1">
