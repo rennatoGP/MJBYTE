@@ -74,7 +74,9 @@ html {
     font-weight: 400;
     font-style: normal;
 }
-
+.svg_nome_empresa{
+    display: none;
+}
 /* Título */
 .titulo {
     font-size: 2rem;
@@ -152,14 +154,20 @@ spline-viewer {
     }
     .nome_empresa{
         width: 100%;
+        font-size: 4rem;
+        color: var(--cor4);
+        padding-left: 10px;
         /* margin-top: 20px; */
-        /* background-color: #222; */
+        background-color: var(--cor11);
+    }
+    .svg_nome_empresa{
+        display: block;
     }
     .titulo{
         /* background-color: var(--cor4); */
         border-radius: 5px;
-        padding: 20px 5px;
-        margin: 15px 0;
+        /* padding: 20px 5px; */
+        /* margin: 15px 0; */
         font-size: 2rem;
         text-align: left;
         
@@ -180,12 +188,14 @@ spline-viewer {
    
     .navbar ul {
         padding: 0;
+        margin: 30px 0;
         background-color: transparent;
         /* justify-content: center; */
     }
 
     .descricao {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
+    
 
 }

@@ -160,6 +160,11 @@
       .card_description{
           width: 100%;
           height: 40%;
+
+          p{
+            font-size: 1.3rem;
+            text-align: left;
+          }
       }
       
   }
