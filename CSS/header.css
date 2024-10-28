@@ -48,7 +48,7 @@ html {
 
 .navbar ul {
     display: flex;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     justify-content: left;
     list-style: none;
     margin-top: 40px;
@@ -74,9 +74,13 @@ html {
     font-weight: 400;
     font-style: normal;
 }
+.header_mobile,.nome_empresa_mobile{
+    display: none;
+}
 .svg_nome_empresa{
     display: none;
 }
+
 /* Título */
 .titulo {
     font-size: 2rem;
@@ -153,12 +157,26 @@ spline-viewer {
         /* padding: 10px; */
     }
     .nome_empresa{
+        display: none;
+    }
+    .header_mobile{
+        display: block;
+        position: relative;
+    }
+    .nome_empresa_mobile{
+        display: block;
+        position: absolute;
+        color: var(--cor3);
+        font-size: 2rem;
+        z-index: 1000;
+        top: 50%; /* Mover para o meio verticalmente */
+        left: 50%; /* Mover para o meio horizontalmente */
+        transform: translate(-50%, -50%); /* Ajustar a posição para o centro */
+    }
+    .img_mobile{
         width: 100%;
-        font-size: 4rem;
-        color: var(--cor4);
-        padding-left: 10px;
-        /* margin-top: 20px; */
-        background-color: var(--cor11);
+        margin: 10px 0;
+        border-radius: 10px;
     }
     .svg_nome_empresa{
         display: block;
